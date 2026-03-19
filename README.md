@@ -42,26 +42,4 @@ harsha-portfolio/
 └── README.md
 ```
 
-## 📸 Adding Your Photo
 
-Replace the `src` in `Hero.jsx`:
-```jsx
-<img src={require("../assets/photo.jpg")} alt="..." className="hero-photo" />
-```
-Then place your image at `src/assets/photo.jpg`.
-
-## ✏️ Updating Content
-
-All content is centralized in `src/data.js`:
-- Skills, projects, experience, achievements — all editable there.
-- Contact details are in `Contact.jsx`.
-
-## 🌐 Deploy
-
-```bash
-# Vercel
-npx vercel
-
-# Netlify
-npm run build && netlify deploy --prod --dir=build
-```
