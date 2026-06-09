@@ -340,7 +340,8 @@ const PREMIUM_AVATAR_URL = premiumAvatar;
 
 const SKILLS_DATA = [
   { cat: "Languages", tags: ["Python", "Java", "Dart", "JavaScript", "C", "SQL"] },
-  { cat: "Frameworks", tags: ["Flutter", "React", "Spring Boot", "Streamlit", "TensorFlow", "OpenCV"] },
+  { cat: "AI & GenAI", tags: ["LangGraph", "LangChain", "Gemini", "Groq AI", "ChromaDB", "RAG"] },
+  { cat: "Frameworks", tags: ["Flutter", "React", "FastAPI", "Spring Boot", "Streamlit", "TensorFlow", "OpenCV"] },
   { cat: "Databases & Tools", tags: ["MySQL", "PostgreSQL", "SQLite", "Git", "GitHub", "ServiceNow"] },
   { cat: "Core CS", tags: ["DSA", "OOP", "DBMS", "OS", "Networks", "ML / AI"] },
   { cat: "Dev & Design", tags: ["HTML", "CSS", "Figma", "Android Studio", "REST APIs", "JWT"] },
@@ -349,14 +350,30 @@ const SKILLS_DATA = [
 
 const PROJECTS_DATA = [
   {
-    num: "01 / Featured", title: "Smart Drive", sub: "AI Drowsiness Detection App",
+    num: "01 / Featured", title: "Kurukshetra AI", sub: "AI-Powered Software Battle Arena",
+    desc: "Full-stack multi-agent AI platform where LLM agents compete in coding battles. Built with FastAPI + WebSockets + LangGraph for real-time agentic workflows and live score streaming.",
+    impacts: ["Real-time multi-agent battle engine via WebSockets", "LangGraph orchestration for agentic code generation", "Gemini-powered AI judge with structured scoring"],
+    tags: ["FastAPI", "LangGraph", "Gemini", "React", "PostgreSQL"],
+    github: "https://github.com/harshachaluvadi21",
+    badge: "🤖 GenAI",
+  },
+  {
+    num: "02 / Featured", title: "Bank RAG Assistant", sub: "LLM + RAG Chatbot for Banking",
+    desc: "Retrieval-Augmented Generation chatbot that answers banking policy questions using ChromaDB vector store, Gemini LLM, and LangChain, with contextual document chunking.",
+    impacts: ["Semantic search over 100+ banking policy docs", "ChromaDB vector store with persistent embeddings", "Context-aware answers with source citations"],
+    tags: ["Python", "LangChain", "ChromaDB", "Gemini", "Streamlit"],
+    github: "https://github.com/harshachaluvadi21",
+    badge: "📚 RAG",
+  },
+  {
+    num: "03 / Featured", title: "Smart Drive", sub: "AI Drowsiness Detection App",
     desc: "Flutter & ML Kit app for real-time driver drowsiness detection with AI voice assistant and automated GPS emergency alerts.",
     impacts: ["100% hands-free interface via STT/TTS", "Low-latency AI assistant with Groq Llama 3.3", "Automated GPS SMS alerts on fatigue events"],
     tags: ["Flutter", "ML Kit", "Groq AI", "Dart"],
     github: "https://github.com/harshachaluvadi21/smart_drive",
   },
   {
-    num: "02 / Featured", title: "Face Recognition Attendance", sub: "AI Smart Attendance System",
+    num: "04 / Featured", title: "Face Recognition Attendance", sub: "AI Smart Attendance System",
     desc: "Computer vision attendance system using KNN classification with a real-time Streamlit dashboard and automated record management.",
     impacts: ["95% face recognition accuracy", "50% reduction in manual attendance time", "25% fewer false positives with optimized KNN"],
     tags: ["Python", "OpenCV", "KNN", "Streamlit"],
@@ -364,8 +381,17 @@ const PROJECTS_DATA = [
   },
 ];
 
+const CINEMA_PROJECT = {
+  num: "05 / Featured", title: "CinemaStudio AI", sub: "AI Movie Script & Pitch Generator",
+  desc: "GenAI-powered creative studio that generates complete movie scripts, character breakdowns, and investor pitch decks from a single prompt. Built with Gemini + LangChain multi-step pipelines.",
+  impacts: ["Multi-step LangChain pipeline for structured script generation", "Gemini 1.5 Pro for cinematic narrative generation", "Exportable PDF pitchdecks with scene-by-scene breakdown"],
+  tags: ["Python", "LangChain", "Gemini", "Streamlit", "FastAPI"],
+  badge: "🎬 GenAI",
+  github: "https://github.com/harshachaluvadi21",
+};
+
 const WIDE_PROJECT = {
-  num: "03 / Live Project", title: "Rent Loop", sub: "Scalable P2P Rental Platform",
+  num: "06 / Live Project", title: "Rent Loop", sub: "Scalable P2P Rental Platform",
   desc: "A scalable peer-to-peer rental marketplace built with Spring Boot + React, featuring JWT auth, role-based access control, and QR-based transaction verification.",
   impacts: ["Scalable RESTful APIs with PostgreSQL", "QR-based booking lifecycle verification", "JWT + role-based access control", "Deployed on Vercel + Render"],
   tags: ["Spring Boot", "React", "PostgreSQL", "JWT"],
@@ -498,9 +524,9 @@ function Hero() {
             <div><div className="fb-accent">Flutter + AI</div><div className="fb-label" style={{ marginTop: 3 }}>Core Stack · 3+ Projects</div></div>
           </div>
           {/* Floating Tech */}
-          <div className="tech-float t1">React</div>
-          <div className="tech-float t2">Python</div>
-          <div className="tech-float t3">AI/ML</div>
+          <div className="tech-float t1">LangGraph</div>
+          <div className="tech-float t2">FastAPI</div>
+          <div className="tech-float t3">GenAI</div>
           <div className="tech-float t4">Flutter</div>
         </div>
       </div>
@@ -531,12 +557,12 @@ function About() {
             <div className="avatar-scene">
               <div className="avatar-halo"></div>
               <div className="avatar-wrapper v3">
-                <img src={PREMIUM_AVATAR_URL} alt="Premium Developer Avatar" className="about-avatar v3" />
+                <img src={PHOTO_URL} alt="Sai Harsha Chaluvadi" className="about-avatar v3" />
                 <div className="avatar-overlay"></div>
               </div>
-              <div className="floating-bubble b1">React</div>
-              <div className="floating-bubble b2">AI</div>
-              <div className="floating-bubble b3">Flutter</div>
+              <div className="floating-bubble b1">LangGraph</div>
+              <div className="floating-bubble b2">GenAI</div>
+              <div className="floating-bubble b3">FastAPI</div>
               <div className="orb o1"></div>
               <div className="orb o2"></div>
             </div>
@@ -556,7 +582,7 @@ function About() {
                 <div className="stat-lbl">Academic CGPA</div>
               </div>
               <div className="stat-card">
-                <div className="stat-val">3+</div>
+                <div className="stat-val">6+</div>
                 <div className="stat-lbl">Production Projects</div>
               </div>
               <div className="stat-card">
@@ -623,7 +649,29 @@ function Projects() {
             </div>
           ))}
 
-          {/* Wide card */}
+          {/* CinemaStudio wide card */}
+          <div className="proj-card wide">
+            <div className="proj-num">{CINEMA_PROJECT.num}</div>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 4, flexWrap: "wrap", gap: 8 }}>
+              <div><div className="proj-title">{CINEMA_PROJECT.title}</div><div className="proj-sub">{CINEMA_PROJECT.sub}</div></div>
+              <span className="proj-badge">{CINEMA_PROJECT.badge}</span>
+            </div>
+            <div className="proj-wide-inner">
+              <div>
+                <p className="proj-desc">{CINEMA_PROJECT.desc}</p>
+                <div className="proj-links" style={{ marginTop: 10 }}>
+                  <a href={CINEMA_PROJECT.github} className="proj-link" target="_blank" rel="noreferrer">GitHub ↗</a>
+                </div>
+              </div>
+              <div>
+                <div className="proj-impact-lbl">Key Impact</div>
+                <ul className="proj-impacts">{CINEMA_PROJECT.impacts.map(i => <li key={i}>{i}</li>)}</ul>
+                <div className="tags" style={{ marginTop: 12 }}>{CINEMA_PROJECT.tags.map(t => <span className="tag" key={t}>{t}</span>)}</div>
+              </div>
+            </div>
+          </div>
+
+          {/* Rent Loop wide card */}
           <div className="proj-card wide">
             <div className="proj-num">{WIDE_PROJECT.num}</div>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 4, flexWrap: "wrap", gap: 8 }}>
@@ -748,10 +796,7 @@ function Contact({ showToast }) {
               <div className="ci-icon">✉️</div>
               <div><div className="ci-lbl">Email</div><div className="ci-val">harshachaluvadi21@gmail.com</div></div>
             </a>
-            <a href="tel:+919666785449" className="contact-row">
-              <div className="ci-icon">📱</div>
-              <div><div className="ci-lbl">Phone</div><div className="ci-val">+91 96667 85449</div></div>
-            </a>
+
             <div className="contact-row" style={{ cursor: "default" }}>
               <div className="ci-icon">📍</div>
               <div><div className="ci-lbl">Location</div><div className="ci-val">Hyderabad, India</div></div>

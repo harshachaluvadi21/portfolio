@@ -38,13 +38,7 @@ export default function Contact({ showToast }) {
                 <div className="ci-val">harshachaluvadi21@gmail.com</div>
               </div>
             </a>
-            <a href="tel:+919666785449" className="contact-row">
-              <div className="ci-icon">📱</div>
-              <div>
-                <div className="ci-lbl">Phone</div>
-                <div className="ci-val">+91 96667 85449</div>
-              </div>
-            </a>
+
             <div className="contact-row" style={{ cursor: "default" }}>
               <div className="ci-icon">📍</div>
               <div>

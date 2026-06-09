@@ -1,5 +1,5 @@
 import { scrollTo } from "../hooks";
-import photo from "../assets/photo.jpg";
+import avatar3d from "../assets/harsha_3d_avatar.png";
 
 export default function Hero() {
   return (
@@ -16,13 +16,12 @@ export default function Hero() {
           Hi, I'm <strong>Sai Harsha Chaluvadi</strong> 👋
         </p>
         <h1 className="hero-title">
-          COLLEGE STUDENT<br />
-          <span className="hl">SOFTWARE</span><br />
-          &amp; AI DEVELOPER
+          AI &amp;<br />
+          <span className="hl">FULL-STACK</span><br />
+          DEVELOPER
         </h1>
         <p className="hero-sub">
-          UG CSE '27 @ Anurag University · President, Android Club · Flutter &amp; AI Engineer · 
-          Passionate about building production apps that solve real-world problems.
+          UG CSE '27 @ Anurag University · President, Android Club · Building AI-powered apps with LangGraph, FastAPI &amp; Next.js
         </p>
         <div className="hero-cta">
           <button className="btn-primary" onClick={() => scrollTo("projects")}>
@@ -42,32 +41,19 @@ export default function Hero() {
           </svg>
           <div className="hero-glow-base" />
           <div className="hero-photo-wrap">
-            {/* Replace src below with your actual photo path: src/assets/photo.jpg */}
             <img
-              src={photo}
+              src={avatar3d}
               alt="Sai Harsha Chaluvadi"
               className="hero-photo"
             />
           </div>
-          <div className="fbadge f1">
-            <div className="fb-icon">🏆</div>
-            <div>
-              <div className="fb-val">1st Place</div>
-              <div className="fb-label">V Hack 2.0 National</div>
-            </div>
-          </div>
-          <div className="fbadge f2">
-            <div>
-              <div className="fb-accent">Flutter + AI</div>
-              <div className="fb-label" style={{ marginTop: 3 }}>Core Stack · 3+ Projects</div>
-            </div>
-          </div>
-
           {/* Floating Tech Icons */}
-          <div className="tech-float t1">React</div>
-          <div className="tech-float t2">Python</div>
-          <div className="tech-float t3">AI/ML</div>
-          <div className="tech-float t4">Flutter</div>
+          <div className="tech-float t1">Multi-Agent AI</div>
+          <div className="tech-float t2">LangGraph</div>
+          <div className="tech-float t3">RAG Pipeline</div>
+          <div className="tech-float t4">Next.js</div>
+          <div className="tech-float t5">🥇 V Hack 2.0</div>
+          <div className="tech-float t6">6+ Projects</div>
         </div>
       </div>
 
