@@ -33,11 +33,12 @@ export default function Nav({ menuOpen, setMenuOpen }) {
           </a>
           <button className="nav-hire" onClick={() => handleNav("contact")}>Hire Me</button>
         </div>
-        <button className="nav-hamburger" onClick={() => setMenuOpen(true)}>☰</button>
+        <button className="nav-hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? "✕" : "☰"}
+        </button>
       </nav>
 
       <div className={`mobile-menu${menuOpen ? " open" : ""}`}>
-        <button className="mobile-close" onClick={() => setMenuOpen(false)}>✕</button>
         {LINKS.map((l) => (
           <a key={l} onClick={() => handleNav(l)}>
             {l.charAt(0).toUpperCase() + l.slice(1)}
