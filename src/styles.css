@@ -364,20 +364,29 @@ footer { border-top: 1px solid var(--border); padding: 30px 0; background: var(-
     object-position: center top !important;
   }
   
-  /* Hide minor floating tags, keep LangGraph (t2) & Next.js (t4) */
-  .tech-float.t1,
-  .tech-float.t3,
-  .tech-float.t5,
-  .tech-float.t6 {
-    display: none !important;
+  .tech-float.t1 {
+    top: 40px !important;
+    left: -15px !important;
   }
   .tech-float.t2 {
-    top: -10px !important;
-    right: 20px !important;
+    top: 10px !important;
+    right: -15px !important;
+  }
+  .tech-float.t3 {
+    top: 150px !important;
+    left: -25px !important;
   }
   .tech-float.t4 {
+    top: 130px !important;
+    right: -20px !important;
+  }
+  .tech-float.t5 {
+    bottom: 70px !important;
+    left: -15px !important;
+  }
+  .tech-float.t6 {
     bottom: 20px !important;
-    left: -10px !important;
+    right: -10px !important;
   }
 
   /* 2. NAVBAR */
